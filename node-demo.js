@@ -24,10 +24,10 @@ var server = http.createServer(function(request, response){
   if(path === '/'){
     response.statusCode = 200
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
-    response.write(`
-    <link rel="stylesheet" href="./style.css">
-    <h1>你好</h1>
-  `)
+   response.write(`
+      <link rel="stylesheet" href="./style.css">
+      <h1>你好</h1>
+    `)
     response.end()
   } else if(path === './style.css'){
     response.statusCode = 200
